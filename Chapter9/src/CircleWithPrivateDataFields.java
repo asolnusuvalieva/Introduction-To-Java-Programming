@@ -36,3 +36,9 @@ public class CircleWithPrivateDataFields{
         return radius * radius * Math.PI;
     }
 }
+/*
+Since these methods are the only ways to read and modify the radius,
+you have total control over how the radius property is accessed.
+If you have to change the implementation of these methods,
+you don’t need to change the client programs. This makes the class easy to maintain.
+ */
