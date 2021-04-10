@@ -14,4 +14,8 @@ public class RandomCharacter {
     public static char getRandomDigitCharacter() {
         return getRandomCharacter('0', '9');
     }
+
+    public static char getRandomCharacter() {
+        return getRandomCharacter('\u0000', '\uFFFF');
+    }
 }
