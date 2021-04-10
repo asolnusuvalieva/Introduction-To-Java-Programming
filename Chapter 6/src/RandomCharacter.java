@@ -10,4 +10,8 @@ public class RandomCharacter {
     public static char getRandomUpperCaseLetter() {
         return getRandomCharacter('A', 'Z');
     }
+
+    public static char getRandomDigitCharacter() {
+        return getRandomCharacter('0', '9');
+    }
 }
