@@ -7,6 +7,8 @@ public class AnalyzeNumbers {
         double [] numbers = new double[n];
         double sum = 0;
 
+
+
         System.out.print("Enter the numbers: ");
         for (int i = 0; i < n; i++) {
             numbers[i] = input.nextDouble();
