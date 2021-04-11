@@ -12,5 +12,14 @@ public class AnalyzeNumbers {
             numbers[i] = input.nextDouble();
             sum += numbers[i];
         }
+        double average = sum / n;
+        int count = 0; // The number of elements above average
+
+        for (int i = 0; i < n; i++)
+            if (numbers[i] > average)
+                count++;
+
+
+
     }
 }
