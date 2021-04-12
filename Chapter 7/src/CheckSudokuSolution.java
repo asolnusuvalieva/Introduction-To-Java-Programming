@@ -14,6 +14,18 @@ public class CheckSudokuSolution {
         return grid;
     }
 
+    public static boolean isValid(int[][] solution){
+        for(int i = 0; i < solution.length; i++){
+            for(int j = 0; j < solution[i].length; j++){
+                if(solution[i][j] < 1 || solution[i][j] > 9 || !isValid(i, j, solution)){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+
     public static boolean isValid(int i, int j, int[][] solution){
         //Unique in row "i"?
         for(int column = 0; column < solution[i].length; column++){
