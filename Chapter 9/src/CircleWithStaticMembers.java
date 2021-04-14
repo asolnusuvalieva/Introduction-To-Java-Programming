@@ -1,9 +1,9 @@
 public class CircleWithStaticMembers {
-    /* The radius of the circle */
-    double radius;
-
     /* The number of objects created */
     static int numberOfObjects = 0;
+
+    /* The radius of the circle */
+    double radius;
 
     /*Construct a circle with radius 1*/
     CircleWithStaticMembers(){

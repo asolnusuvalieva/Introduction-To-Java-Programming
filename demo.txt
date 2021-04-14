@@ -1,0 +1,5 @@
+“Over the next five chapters, you are going to build an application named WorldTrotter. When it is complete, this app will convert values between degrees Fahrenheit and degrees Celsius. In this chapter, you will learn about views and the view hierarchy through creating WorldTrotter’s UI. At the end of this chapter, your app will look like Figure 3.1.”
+
+Excerpt From: Aaron Hillegass. “iOS Programming: The Big Nerd Ranch Guide, 7th Edition.” Apple Books. 
+
+/var/folders/0b/g4_p9xrd7m51py2b1d1x5z2c0000gn/T/TemporaryItems/(A Document Being Saved By screencaptureui)/Screen Shot 2021-04-15 at 01.40.15.png
