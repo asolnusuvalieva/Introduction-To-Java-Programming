@@ -19,4 +19,9 @@ public class CountLettersInArray {
                 System.out.print(chars[i] + " ");
         }
     }
+
+    public static int[] countLetters(char[] chars) {
+        int[] counts = new int[26];
+        return counts;
+    }
 }
