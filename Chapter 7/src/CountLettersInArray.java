@@ -1,4 +1,7 @@
 public class CountLettersInArray {
+    public static void main(String[] args) {
+
+    }
     public static char[] createArray() {
         // Declare an array of characters and create it
         char[] chars = new char[100];
