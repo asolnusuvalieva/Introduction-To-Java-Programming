@@ -1,6 +1,14 @@
 public class CountLettersInArray {
     public static void main(String[] args) {
+        char[] chars = createArray();
 
+        System.out.println("The lowercase letters are:");
+        displayArray(chars);
+        int[] counts = countLetters(chars);
+
+        System.out.println();
+        System.out.println("The occurrences of each letter are:");
+        displayCounts(counts);
     }
     public static char[] createArray() {
         // Declare an array of characters and create it
