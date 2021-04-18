@@ -28,4 +28,8 @@ public class CountLettersInArray {
 
         return counts;
     }
+
+    public static void displayCounts(int[] counts) {
+
+    }
 }
