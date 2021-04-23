@@ -18,3 +18,4 @@ public class SelectionSort {
         }
     }
 }
+//stopped: Listing 8.2, p. 295
