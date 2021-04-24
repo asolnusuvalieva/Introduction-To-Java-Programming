@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class GuessBirthdayUsingArray {
     public static void main(String[] args) {
         int day = 0; // Day to be determined
@@ -24,5 +26,21 @@ public class GuessBirthdayUsingArray {
                 {24, 25, 26, 27},
                 {28, 29, 30, 31}}};
 
+        Scanner input = new Scanner(System.in);
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Is your birthday in Set" + (i + 1) + "?");
+            for (int j = 0; j < 4; j++) {
+                for (int k = 0; k < 4; k++)
+                    System.out.printf("%4d", dates[i][j][k]);
+                System.out.println();
+            }
+
+            System.out.print("\nEnter 0 for No and 1 for Yes: ");
+            answer = input.nextInt();
+
+            if (answer == 1)
+                day += dates[i][0][0];
+        }
+        System.out.println("Your birthday is " + day);
     }
 }
