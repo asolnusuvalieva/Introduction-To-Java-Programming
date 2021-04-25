@@ -27,4 +27,9 @@ public class StackOfIntegers {
     public int pop(){
         return elements[size--];
     }
+
+    /** Return the top element from the stack */
+    public int peek() {
+        return elements[size - 1];
+    }
 }
