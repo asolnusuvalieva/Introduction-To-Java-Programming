@@ -16,4 +16,9 @@ public class BMI {
     public BMI(String name, double weight, double height) {
         this(name, 20, weight, height);
     }
+    public double getBMI(){
+        double bmi = weight * KILOGRAMS_PER_POUND /
+                (height * METERS_PER_INCH * height * METERS_PER_INCH);
+        return Math.round(bmi * 100) / 100.0;
+    }
 }
