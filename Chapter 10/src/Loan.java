@@ -17,4 +17,14 @@ public class Loan {
         this.loanAmount = loanAmount;
         loanDate = new java.util.Date();
     }
+
+    /** Return annualInterestRate */
+    public double getAnnualInterestRate() {
+        return annualInterestRate;
+    }
+
+    /** Set a new annualInterestRate */
+    public void setAnnualInterestRate(double annualInterestRate) {
+        this.annualInterestRate = annualInterestRate;
+    }
 }
