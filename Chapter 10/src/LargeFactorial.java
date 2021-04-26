@@ -5,7 +5,7 @@ public class LargeFactorial {
         System.out.println("50! is \n" + factorial(50));
     }
 
-    public static BigInteger factorial(long n) {
+    public static BigInteger factorial(long n) { //the method
         BigInteger result = BigInteger.ONE;
         for (int i = 1; i <= n; i++)
             result = result.multiply(new BigInteger(i + ""));
