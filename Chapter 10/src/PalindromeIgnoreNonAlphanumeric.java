@@ -10,10 +10,16 @@ public class PalindromeIgnoreNonAlphanumeric {
 //        System.out.println("Ignoring nonalphanumeric characters, \nis " + s + " a palindrome? " + isPalindrome(s));
     }
 
-//    public static boolean isPalindrome(String s){
-//        // Create a new string by eliminating nonalphanumeric chars
-//        String s1 = filter(s);
-//    }
+    public static boolean isPalindrome(String s){
+        // Create a new string by eliminating nonalphanumeric chars
+        String s1 = filter(s);
+
+        // Create a new string that is the reversal of s1
+        String s2 = reverse(s1);
+
+        // Check if the reversal is the same as the original string
+        return s2.equals(s1);
+    }
 
     public static String filter(String s){
         //Create a string builder
