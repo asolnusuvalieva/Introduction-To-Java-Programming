@@ -7,7 +7,7 @@ public class PalindromeIgnoreNonAlphanumeric {
         System.out.println("Enter a string: ");
         String s = scanner.nextLine();
 
-//        System.out.println("Ignoring nonalphanumeric characters, \nis " + s + " a palindrome? " + isPalindrome(s));
+        System.out.println("Ignoring nonalphanumeric characters, \nis " + s + " a palindrome? " + isPalindrome(s));
     }
 
     public static boolean isPalindrome(String s){
