@@ -10,5 +10,8 @@ public class TestBreak {
                 break;
             }
         }
+
+        System.out.println("The sum is " + sum); //105
+        System.out.println("The num is " + num); //14
     }
 }
