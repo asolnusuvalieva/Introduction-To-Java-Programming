@@ -19,5 +19,16 @@ public class Weather {
             data[day - 1][hour - 1][1] = humidity;
         }
 
+        //the average daily temperature and humidity
+        for(int i = 0; i < NUMBER_OF_DAYS; i++){
+            double dailyTemperatureTotal = 0, dailyHumidityTotal = 0;
+            for (int j = 0; j < NUMBER_OF_HOURS; j++){
+                dailyTemperatureTotal += data[i][j][0];
+                dailyHumidityTotal += data[i][j][1];
+            }
+
+            System.out.println("Day " + i + "'s average temperature is " + dailyTemperatureTotal / NUMBER_OF_HOURS);
+            System.out.println("Day " + i + "'s average humidity is " + dailyHumidityTotal / NUMBER_OF_HOURS);
+        }
     }
 }
