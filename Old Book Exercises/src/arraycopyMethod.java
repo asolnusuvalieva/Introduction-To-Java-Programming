@@ -9,5 +9,11 @@ public class arraycopyMethod {
         for(int i = 0; i < sourceArray.length; i++){
             System.out.print(sourceArray[i] + " ");
         }
+
+        System.out.println();
+        System.out.println("The contents of the target Array: ");
+        for(int i = 0; i < targetArray.length; i++){
+            System.out.print(targetArray[i] + " ");
+        }
     }
 }
