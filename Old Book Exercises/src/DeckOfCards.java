@@ -17,5 +17,13 @@ public class DeckOfCards {
             deck[i] = deck[index];
             deck[index] = temp;
         } //{4, 7, 24, ..., 34} now, they are randomly placed
+
+        //display the first 4 cards
+        for(int i = 0; i < 4; i++){
+            int cardNumber = deck[i];
+            String suit = suits[cardNumber/13];
+            String rank = ranks[cardNumber%13]; //остаток всегда меньше делителя
+            System.out.println("Card number " + deck[i] + ": " + rank + " of " + suit);
+        }
     }
 }
