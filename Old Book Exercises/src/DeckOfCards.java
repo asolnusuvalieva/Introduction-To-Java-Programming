@@ -9,5 +9,13 @@ public class DeckOfCards {
             deck[i] = i;
         } //{0, 1, 2, 3, ..., 51}
 
+        //Shuffle the cards
+        for(int i = 0; i < 52; i++){
+            //Generate an index randomly
+            int index= (int)(Math.random() * deck.length);
+            int temp = deck[i];
+            deck[i] = deck[index];
+            deck[index] = temp;
+        } //{4, 7, 24, ..., 34} now, they are randomly placed
     }
 }
