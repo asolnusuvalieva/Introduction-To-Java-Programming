@@ -25,4 +25,13 @@ public class CountTheOccurrenceOfEachLetter {
             }
         }
     }
+
+    public static int[] countLetters(char[] chars){
+        int[] counts = new int[26];
+
+        for (int i = 0; i < chars.length; i++){
+            counts[chars[i] - 'a']++;
+        }
+        return counts;
+    }
 }
