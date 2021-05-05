@@ -34,4 +34,14 @@ public class CountTheOccurrenceOfEachLetter {
         }
         return counts;
     }
+
+    public static void displayCounts(int[] counts){
+        for(int i = 0; i < counts.length; i++){
+            if((i + 1) % 10 == 0){
+                System.out.println(counts[i] + " " + (char)(i + 'a'));
+            }else{
+                System.out.print(counts[i] + " " + (char)(i + 'a') + " ");
+            }
+        }
+    }
 }
