@@ -6,6 +6,15 @@ counts[0] counts the number of a’s, counts[1] counts the number of b’s, and 
  */
 
 public class CountTheOccurrenceOfEachLetter {
+    public static void main(String[] args) {
+        char[] chars = createArrayOfRandomChars();
+        System.out.println("The lowercase letters are:");
+        displayArray(chars);
+        int[] counts = countLetters(chars);
+        System.out.println();
+        System.out.println("The occurrences of each letter are:");
+        displayCounts(counts);
+    }
     public static char[] createArrayOfRandomChars(){
         char[] chars = new char[100];
 
