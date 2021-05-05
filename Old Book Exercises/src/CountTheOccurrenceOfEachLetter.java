@@ -14,4 +14,15 @@ public class CountTheOccurrenceOfEachLetter {
         }
         return  chars;
     }
+
+    public static void displayArray(char[] chars){
+        // Display the characters in the array 20 on each line
+        for(int i = 0; i< chars.length; i++){
+            if((i + 1) % 20 == 0){
+                System.out.println(chars[i]);
+            }else{
+                System.out.print(chars[i] + " ");
+            }
+        }
+    }
 }
