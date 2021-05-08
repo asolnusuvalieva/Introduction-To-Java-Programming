@@ -6,4 +6,8 @@ public class SummingElementsByColumn {
                 {5, 5, 6}
         };
     }
+
+    public static void sumElementsOfColumn (int[][] list){
+
+    }
 }
