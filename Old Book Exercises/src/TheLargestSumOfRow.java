@@ -5,6 +5,7 @@ public class TheLargestSumOfRow {
                 {4, 5, 6}
         };
 
+        whichRowHasTheLargestSum(list);
     }
     public static void whichRowHasTheLargestSum(int[][] list){
         int maxRowIndex = 0;
