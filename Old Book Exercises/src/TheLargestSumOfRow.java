@@ -24,6 +24,7 @@ public class TheLargestSumOfRow {
                 maxRowIndex = i;
             }
         }
-    }
 
+        System.out.println("Row " + maxRowIndex + " has the largest sum, " + maxSum);
+    }
 }
