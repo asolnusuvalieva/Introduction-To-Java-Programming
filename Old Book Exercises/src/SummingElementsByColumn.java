@@ -8,6 +8,13 @@ public class SummingElementsByColumn {
     }
 
     public static void sumElementsOfColumn (int[][] list){
-
+        for(int column = 0; column < list[0].length; column++){
+            int total = 0;
+            for(int row = 0; row < list.length; row++){
+                total += list[row][column];
+            }
+            System.out.println("Sum for column " + column + " is "
+                    + total);
+        }
     }
 }
