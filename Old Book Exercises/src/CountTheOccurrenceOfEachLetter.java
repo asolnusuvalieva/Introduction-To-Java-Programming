@@ -15,6 +15,7 @@ public class CountTheOccurrenceOfEachLetter {
         System.out.println("The occurrences of each letter are:");
         displayCounts(counts);
     }
+
     public static char[] createArrayOfRandomChars(){
         char[] chars = new char[100];
 
