@@ -26,4 +26,8 @@ public class CircleFromSimpleGeometricObject extends SimpleGeometricObject {
     public double getArea() {
         return radius * radius * Math.PI;
     }
+
+    public double getDiameter() {
+        return 2 * radius * Math.PI;
+    }
 }
