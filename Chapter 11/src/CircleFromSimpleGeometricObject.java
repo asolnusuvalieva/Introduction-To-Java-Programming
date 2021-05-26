@@ -4,4 +4,8 @@ public class CircleFromSimpleGeometricObject extends SimpleGeometricObject {
     public CircleFromSimpleGeometricObject(){
 
     }
+
+    public CircleFromSimpleGeometricObject(double radius) {
+        this.radius = radius;
+    }
 }
