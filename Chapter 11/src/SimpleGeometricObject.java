@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class SimpleGeometricObject {
     private String color = "white";
     private boolean filled;
@@ -26,5 +28,9 @@ public class SimpleGeometricObject {
 
     public void setFilled(boolean filled) {
         this.filled = filled;
+    }
+
+    public Date getDateCreated() {
+        return dateCreated;
     }
 }
