@@ -28,4 +28,8 @@ public class RectangleFromSimpleGeometricObject extends SimpleGeometricObject {
     public void setHeight(double height) {
         this.height = height;
     }
+
+    public double getArea() {
+        return width * height;
+    }
 }
