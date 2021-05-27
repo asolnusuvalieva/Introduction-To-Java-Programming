@@ -32,4 +32,8 @@ public class RectangleFromSimpleGeometricObject extends SimpleGeometricObject {
     public double getArea() {
         return width * height;
     }
+
+    public double getPerimeter() {
+        return 2 * (width + height);
+    }
 }
