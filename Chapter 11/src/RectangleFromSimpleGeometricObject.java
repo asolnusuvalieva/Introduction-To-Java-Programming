@@ -5,4 +5,11 @@ public class RectangleFromSimpleGeometricObject extends SimpleGeometricObject {
     public RectangleFromSimpleGeometricObject(){
 
     }
+
+    public RectangleFromSimpleGeometricObject(double width, double height, String color, boolean filled) {
+        this.width = width;
+        this.height = height;
+        setColor(color);
+        setFilled(filled);
+    }
 }
