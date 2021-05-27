@@ -6,5 +6,7 @@ public class TestCircleRectangle {
         System.out.println("The radius is " + circle.getRadius());
         System.out.println("The area is " + circle.getArea());
         System.out.println("The diameter is " + circle.getDiameter());
+
+        RectangleFromSimpleGeometricObject rectangle = new RectangleFromSimpleGeometricObject(2, 4);
     }
 }
