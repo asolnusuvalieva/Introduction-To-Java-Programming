@@ -23,5 +23,7 @@ public class TestArrayList {
                 cityList.contains("Miami"));
         System.out.println("The location of Denver in the list? "
                 + cityList.indexOf("Denver"));
+        System.out.println("Is the list empty? " +
+                cityList.isEmpty()); // Print false
     }
 }
