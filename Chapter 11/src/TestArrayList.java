@@ -17,5 +17,7 @@ public class TestArrayList {
         // Contains [London, Denver, Paris, Miami, Seoul]
         cityList.add("Tokyo");
         // Contains [London, Denver, Paris, Miami, Seoul, Tokyo]
+
+        System.out.println("List size? " + cityList.size());
     }
 }
