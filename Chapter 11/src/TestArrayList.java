@@ -46,5 +46,9 @@ public class TestArrayList {
 
         // Create a list to store two circles
         ArrayList<CircleFromSimpleGeometricObject> list = new ArrayList<>();
+
+        // Add two circles
+        list.add(new CircleFromSimpleGeometricObject(2));
+        list.add(new CircleFromSimpleGeometricObject(3));
     }
 }
