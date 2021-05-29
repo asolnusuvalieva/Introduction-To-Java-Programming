@@ -14,5 +14,9 @@ public class DistinctNumbers {
             if (!list.contains(value) && value != 0)
                 list.add(value);
         }while(value != 0);
+
+        // Display the distinct numbers
+        for (int i = 0; i < list.size(); i++)
+            System.out.print(list.get(i) + " ");
     }
 }
