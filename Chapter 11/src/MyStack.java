@@ -13,4 +13,8 @@ public class MyStack {
     public Object peek() {
         return list.get(getSize() - 1);
     }
+
+    public void push(Object o){
+        list.add(o);
+    }
 }
