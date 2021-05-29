@@ -17,4 +17,10 @@ public class MyStack {
     public void push(Object o){
         list.add(o);
     }
+
+    public Object pop() {
+        Object o = list.get(getSize() - 1);
+        list.remove(getSize() - 1);
+        return o;
+    }
 }
