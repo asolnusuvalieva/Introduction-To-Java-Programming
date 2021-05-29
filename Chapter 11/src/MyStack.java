@@ -23,4 +23,8 @@ public class MyStack {
         list.remove(getSize() - 1);
         return o;
     }
+
+    public String toString() {
+        return "stack: " + list.toString();
+    }
 }
