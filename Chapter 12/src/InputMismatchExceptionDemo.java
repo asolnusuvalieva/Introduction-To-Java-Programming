@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class InputMismatchExceptionDemo {
@@ -6,7 +7,12 @@ public class InputMismatchExceptionDemo {
         boolean continueInput = true;
 
         do{
+            try{
+                System.out.print("Enter an integer: ");
+                int number = input.nextInt();
+            }catch(InputMismatchException e){
 
+            }
         }while(continueInput);
     }
 }
