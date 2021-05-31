@@ -9,5 +9,7 @@ public class Quotient {
 
         int number1 = input.nextInt();
         int number2 = input.nextInt();
+
+        System.out.println(number1 + " / " + number2 + " is " + (number1 / number2));
     }
 }
