@@ -6,5 +6,8 @@ public class Quotient {
 
         // Prompt the user to enter two integers
         System.out.print("Enter two integers: ");
+
+        int number1 = input.nextInt();
+        int number2 = input.nextInt();
     }
 }
