@@ -10,6 +10,10 @@ public class CircleWithException {
         numberOfObjects++;
     }
 
+    public double getRadius() {
+        return radius;
+    }
+
     public void setRadius(double radius) {
         this.radius = radius;
     }
