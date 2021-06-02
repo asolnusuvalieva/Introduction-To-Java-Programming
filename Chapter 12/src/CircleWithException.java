@@ -2,8 +2,10 @@ public class CircleWithException {
     private double radius;
     private static int numberOfObjects = 0;
 
-    public CircleWithException(double newRadius) {
 
+    public CircleWithException(double newRadius) {
+        setRadius(newRadius);
+        numberOfObjects++;
     }
 
     public void setRadius(double radius) {
