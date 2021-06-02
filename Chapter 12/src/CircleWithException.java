@@ -14,7 +14,10 @@ public class CircleWithException {
         return radius;
     }
 
-    public void setRadius(double radius) {
-        this.radius = radius;
+    public void setRadius(double newRadius) throws IllegalArgumentException{
+            if (newRadius >= 0)
+                radius = newRadius;
+            else
+                throw new IllegalArgumentException("Radius cannot be negative");
     }
 }
