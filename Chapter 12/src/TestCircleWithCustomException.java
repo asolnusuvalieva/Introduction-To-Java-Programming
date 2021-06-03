@@ -8,6 +8,10 @@ class CircleWithCustomException{
     private double radius;
     private static int numberOfObjects = 0;
 
+    public double getRadius() {
+        return radius;
+    }
+
     public void setRadius(double newRadius) throws InvalidRadiusException {
         if(newRadius >= 0){
             radius = newRadius;
