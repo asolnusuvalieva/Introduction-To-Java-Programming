@@ -28,4 +28,8 @@ class CircleWithCustomException{
             throw new InvalidRadiusException(newRadius);
         }
     }
+
+    public static int getNumberOfObjects() {
+        return numberOfObjects;
+    }
 }
