@@ -3,3 +3,7 @@ public class TestCircleWithCustomException {
 
     }
 }
+
+class CircleWithCustomException{
+
+}
