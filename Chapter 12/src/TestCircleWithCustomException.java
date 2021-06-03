@@ -5,5 +5,6 @@ public class TestCircleWithCustomException {
 }
 
 class CircleWithCustomException{
-
+    private double radius;
+    private static int numberOfObjects = 0;
 }
