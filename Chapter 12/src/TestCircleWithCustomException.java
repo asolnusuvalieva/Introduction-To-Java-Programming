@@ -32,4 +32,9 @@ class CircleWithCustomException{
     public static int getNumberOfObjects() {
         return numberOfObjects;
     }
+
+    public double findArea(){
+        return radius * radius * 3.14159;
+    }
+
 }
