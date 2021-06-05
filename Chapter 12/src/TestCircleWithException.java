@@ -5,7 +5,7 @@ public class TestCircleWithException {
             CircleWithException c2 = new CircleWithException(-5);
             CircleWithException c3 = new CircleWithException(0);
         }catch (IllegalArgumentException ex){
-
+            System.out.println(ex);
         }
     }
 }
