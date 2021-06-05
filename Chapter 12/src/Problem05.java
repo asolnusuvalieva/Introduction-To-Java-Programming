@@ -1,7 +1,7 @@
 import java.io.File;
 
 public class Problem05 {
-    public static void main(String[] args) {
+    public static void main(String[] args)throws Exception {
         if(args.length != 2){
             System.err.println("Usage: java Problem05 <Text To Remove> <File To Process>");
             System.exit(-1); //unsuccessful program completion (any other number than 0)
@@ -12,5 +12,8 @@ public class Problem05 {
             System.out.printf("File '%s' doesn't exist.%n", args[1]);
             System.exit(-1);
         }
+
+        File tempFile = File.createTempFile("Problem05.tmp", ".txt");
+        tempFile.deleteOnExit();
     }
 }
