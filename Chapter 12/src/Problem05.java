@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.util.Scanner;
 
 public class Problem05 {
@@ -29,5 +31,8 @@ public class Problem05 {
                 output.println(s2);
             }
         }
+
+        //Writing temp file to the original one
+        Files.copy(tempFile.toPath(), fileToProcess.toPath(), StandardCopyOption.REPLACE_EXISTING);
     }
 }
