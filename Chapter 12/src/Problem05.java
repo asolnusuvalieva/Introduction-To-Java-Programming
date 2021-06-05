@@ -1,4 +1,6 @@
 import java.io.File;
+import java.io.PrintWriter;
+import java.util.Scanner;
 
 public class Problem05 {
     public static void main(String[] args)throws Exception {
@@ -15,5 +17,17 @@ public class Problem05 {
 
         File tempFile = File.createTempFile("Problem05.tmp", ".txt");
         tempFile.deleteOnExit();
+
+        try(
+                // Create input and output files
+                Scanner input = new Scanner(fileToProcess);
+                PrintWriter output = new PrintWriter(tempFile);
+        ){
+            while (input.hasNext()){
+                String s1 = input.nextLine();
+                String s2 = s1.replaceAll(args[0], "");
+                output.println(s2);
+            }
+        }
     }
 }
