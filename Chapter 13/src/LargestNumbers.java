@@ -14,4 +14,16 @@ public class LargestNumbers {
         // Add a BigDecimal
         list.add(new BigDecimal("2.0909090989091343433344343"));
     }
+
+    public static Number getLargestNumber(ArrayList<Number> list) {
+        if (list == null || list.size() == 0)
+            return null;
+
+        Number number = list.get(0);
+        for (int i = 1; i < list.size(); i++)
+            if (number.doubleValue() < list.get(i).doubleValue())
+                number = list.get(i);
+
+        return number;
+    }
 }
