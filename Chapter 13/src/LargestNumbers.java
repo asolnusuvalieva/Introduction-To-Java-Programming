@@ -13,6 +13,8 @@ public class LargestNumbers {
         list.add(new BigInteger("3432323234344343101"));
         // Add a BigDecimal
         list.add(new BigDecimal("2.0909090989091343433344343"));
+
+        System.out.println("The largest number is " + getLargestNumber(list));
     }
 
     public static Number getLargestNumber(ArrayList<Number> list) {
