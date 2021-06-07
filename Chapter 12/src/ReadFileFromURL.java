@@ -5,5 +5,11 @@ public class ReadFileFromURL {
         System.out.println("Enter a URL: ");
         String URLString = new Scanner(System.in).next();
 
+        try{
+            java.net.URL url = new java.net.URL(URLString);
+
+        }catch(java.net.MalformedURLException ex){
+
+        }
     }
 }
