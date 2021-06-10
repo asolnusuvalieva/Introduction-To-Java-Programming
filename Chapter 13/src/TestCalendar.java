@@ -7,5 +7,6 @@ public class TestCalendar {
         Calendar calendar = new GregorianCalendar();
 
         System.out.println("Current time is " + new Date());
+        System.out.println("YEAR: " + calendar.get(Calendar.YEAR));
     }
 }
