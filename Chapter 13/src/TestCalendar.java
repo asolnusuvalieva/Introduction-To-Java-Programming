@@ -17,5 +17,7 @@ public class TestCalendar {
         System.out.println("SECOND: " + calendar.get(Calendar.SECOND));
         System.out.println("DAY_OF_WEEK: " +
                 calendar.get(Calendar.DAY_OF_WEEK));
+        System.out.println("DAY_OF_MONTH: " +
+                calendar.get(Calendar.DAY_OF_MONTH));
     }
 }
