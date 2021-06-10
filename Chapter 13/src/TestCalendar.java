@@ -21,5 +21,7 @@ public class TestCalendar {
                 calendar.get(Calendar.DAY_OF_MONTH));
         System.out.println("DAY_OF_YEAR: " +
                 calendar.get(Calendar.DAY_OF_YEAR));
+        System.out.println("WEEK_OF_MONTH: " +
+                calendar.get(Calendar.WEEK_OF_MONTH));
     }
 }
