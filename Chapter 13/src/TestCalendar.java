@@ -10,6 +10,6 @@ public class TestCalendar {
         System.out.println("YEAR: " + calendar.get(Calendar.YEAR));
         System.out.println("MONTH: " + calendar.get(Calendar.MONTH));
         System.out.println("DATE: " + calendar.get(Calendar.DATE));
-
+        System.out.println("HOUR: " + calendar.get(Calendar.HOUR));
     }
 }
