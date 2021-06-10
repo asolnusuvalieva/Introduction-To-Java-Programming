@@ -26,5 +26,7 @@ public class TestCalendar {
         System.out.println("WEEK_OF_YEAR: " +
                 calendar.get(Calendar.WEEK_OF_YEAR));
         System.out.println("AM_PM: " + calendar.get(Calendar.AM_PM));
+
+        Calendar calendar1 = new GregorianCalendar(2001, 8, 11);
     }
 }
