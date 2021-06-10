@@ -30,5 +30,7 @@ public class TestCalendar {
         Calendar calendar1 = new GregorianCalendar(2001, 8, 11);
         String[] dayNameOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday",
                 "Thursday", "Friday", "Saturday"};
+        System.out.println("September 11, 2001 is a " +
+                dayNameOfWeek[calendar1.get(Calendar.DAY_OF_WEEK) - 1]);
     }
 }
