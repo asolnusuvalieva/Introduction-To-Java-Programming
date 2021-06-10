@@ -15,5 +15,7 @@ public class TestCalendar {
                 calendar.get(Calendar.HOUR_OF_DAY));
         System.out.println("MINUTE: " + calendar.get(Calendar.MINUTE));
         System.out.println("SECOND: " + calendar.get(Calendar.SECOND));
+        System.out.println("DAY_OF_WEEK: " +
+                calendar.get(Calendar.DAY_OF_WEEK));
     }
 }
