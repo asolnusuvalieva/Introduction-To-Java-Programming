@@ -11,5 +11,7 @@ public class TestCalendar {
         System.out.println("MONTH: " + calendar.get(Calendar.MONTH));
         System.out.println("DATE: " + calendar.get(Calendar.DATE));
         System.out.println("HOUR: " + calendar.get(Calendar.HOUR));
+        System.out.println("HOUR_OF_DAY: " +
+                calendar.get(Calendar.HOUR_OF_DAY));
     }
 }
