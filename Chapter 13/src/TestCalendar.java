@@ -13,5 +13,6 @@ public class TestCalendar {
         System.out.println("HOUR: " + calendar.get(Calendar.HOUR));
         System.out.println("HOUR_OF_DAY: " +
                 calendar.get(Calendar.HOUR_OF_DAY));
+        System.out.println("MINUTE: " + calendar.get(Calendar.MINUTE));
     }
 }
