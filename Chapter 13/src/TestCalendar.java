@@ -8,5 +8,6 @@ public class TestCalendar {
 
         System.out.println("Current time is " + new Date());
         System.out.println("YEAR: " + calendar.get(Calendar.YEAR));
+        System.out.println("MONTH: " + calendar.get(Calendar.MONTH));
     }
 }
