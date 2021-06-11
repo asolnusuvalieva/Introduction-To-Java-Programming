@@ -3,3 +3,7 @@ public class TestEdible {
 
     }
 }
+
+abstract class Animal {
+
+}
