@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class House {
+public class House implements Cloneable, Comparable<House> {
     private int id;
     private double area;
     private java.util.Date whenBuilt;
@@ -21,5 +21,9 @@ public class House {
 
     public Date getWhenBuilt() {
         return whenBuilt;
+    }
+
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }
