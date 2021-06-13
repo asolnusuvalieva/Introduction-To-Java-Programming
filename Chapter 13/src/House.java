@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class House {
     private int id;
     private double area;
@@ -15,5 +17,9 @@ public class House {
 
     public double getArea() {
         return area;
+    }
+
+    public Date getWhenBuilt() {
+        return whenBuilt;
     }
 }
