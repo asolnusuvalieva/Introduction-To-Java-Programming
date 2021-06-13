@@ -12,4 +12,8 @@ public class House {
     public int getId() {
         return id;
     }
+
+    public double getArea() {
+        return area;
+    }
 }
