@@ -8,4 +8,8 @@ public class House {
         this.area = area;
         whenBuilt = new java.util.Date();
     }
+
+    public int getId() {
+        return id;
+    }
 }
