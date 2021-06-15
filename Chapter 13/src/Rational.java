@@ -43,4 +43,10 @@ public class Rational {
         long d = denominator * secondRational.getDenominator();
         return new Rational(n, d);
     }
+
+    public Rational multiply(Rational secondRational) {
+        long n = numerator * secondRational.getNumerator();
+        long d = denominator * secondRational.getDenominator();
+        return new Rational(n, d);
+    }
 }
