@@ -30,4 +30,11 @@ public class Rational {
     public long getDenominator() {
         return denominator;
     }
+
+    public Rational add(Rational secondRational) {
+        long n = numerator * secondRational.getDenominator() +
+                denominator * secondRational.getNumerator();
+        long d = denominator * secondRational.getDenominator();
+        return new Rational(n, d);
+    }
 }
