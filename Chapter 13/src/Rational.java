@@ -37,4 +37,10 @@ public class Rational {
         long d = denominator * secondRational.getDenominator();
         return new Rational(n, d);
     }
+
+    public Rational subtract(Rational secondRational) {
+        long n = numerator * secondRational.getDenominator() - denominator * secondRational.getNumerator();
+        long d = denominator * secondRational.getDenominator();
+        return new Rational(n, d);
+    }
 }
