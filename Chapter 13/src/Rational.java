@@ -49,4 +49,10 @@ public class Rational {
         long d = denominator * secondRational.getDenominator();
         return new Rational(n, d);
     }
+
+    public Rational divide(Rational secondRational) {
+        long n = numerator * secondRational.getDenominator();
+        long d = denominator * secondRational.numerator;
+        return new Rational(n, d);
+    }
 }
