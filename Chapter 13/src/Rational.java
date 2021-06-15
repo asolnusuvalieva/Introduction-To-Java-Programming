@@ -22,4 +22,8 @@ public class Rational {
         }
         return gcd;
     }
+
+    public long getNumerator() {
+        return numerator;
+    }
 }
