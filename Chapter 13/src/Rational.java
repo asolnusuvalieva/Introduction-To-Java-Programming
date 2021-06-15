@@ -63,4 +63,11 @@ public class Rational {
         else
             return numerator + "/" + denominator;
     }
+
+    public boolean equals(Object other) {
+        if ((this.subtract((Rational)(other))).getNumerator() == 0)
+            return true;
+        else
+            return false;
+    }
 }
