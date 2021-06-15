@@ -26,4 +26,8 @@ public class Rational {
     public long getNumerator() {
         return numerator;
     }
+
+    public long getDenominator() {
+        return denominator;
+    }
 }
