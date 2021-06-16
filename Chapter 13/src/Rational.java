@@ -74,4 +74,8 @@ public class Rational extends Number implements Comparable<Rational>{
     public int intValue() {
         return (int)doubleValue();
     }
+
+    public float floatValue() {
+        return (float)doubleValue();
+    }
 }
