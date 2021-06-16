@@ -82,4 +82,8 @@ public class Rational extends Number implements Comparable<Rational>{
     public double doubleValue() {
         return numerator * 1.0 / denominator;
     }
+
+    public long longValue() {
+        return (long)doubleValue();
+    }
 }
