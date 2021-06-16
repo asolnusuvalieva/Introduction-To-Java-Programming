@@ -86,4 +86,13 @@ public class Rational extends Number implements Comparable<Rational>{
     public long longValue() {
         return (long)doubleValue();
     }
+
+    public int compareTo(Rational o) {
+        if (this.subtract(o).getNumerator() > 0)
+            return 1;
+        else if (this.subtract(o).getNumerator() < 0)
+            return -1;
+        else
+            return 0;
+    }
 }
