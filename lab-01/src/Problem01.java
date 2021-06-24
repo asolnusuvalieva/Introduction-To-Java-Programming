@@ -7,5 +7,14 @@ public class Problem01 {
     final static char FIELD_MARKED_CELL = '*';
 
     static char[][] fieldContent;
+
+    static void fieldInit(){
+        fieldContent = new char[WIDTH][HEIGHT];
+        for(int i = 0; i < HEIGHT; i++){
+            for (int j = 0; j < WIDTH; j++){
+                fieldContent[i][j] = FIELD_EMPTY_CELL;
+            }
+        }
+    }
 }
 
