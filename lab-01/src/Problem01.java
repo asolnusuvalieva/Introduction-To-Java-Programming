@@ -47,6 +47,10 @@ public class Problem01 {
     static void turtlePutPenUp(){
         turtleIsPenDown = false;
     }
+    static void turtlePutPenDown(){
+        turtleIsPenDown = true;
+    }
+
 
 }
 
