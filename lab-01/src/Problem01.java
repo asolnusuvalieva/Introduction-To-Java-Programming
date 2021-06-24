@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Problem01 {
     final static int WIDTH = 20;
     final static int HEIGHT = 20;
@@ -81,6 +83,59 @@ public class Problem01 {
             }
             turtleX = nextX;
             turtleY = nextY;
+        }
+    }
+
+    public static void main(String[] args) {
+        fieldInit();
+
+        Scanner scanner = new Scanner(System.in);
+        String input;
+        while(!(input = scanner.nextLine().toLowerCase().trim()).equals("exit")){
+            if(input.isEmpty()){
+                System.err.println("Provide the command");
+                continue;
+            }
+            String[] parts = input.split(" ");
+            switch(parts[0]){
+                case "penup":
+                    turtlePutPenUp();
+                    break;
+                case "pendown":
+                    turtlePutPenDown();
+                    break;
+                case "turnright":
+                    turtleTurnRight();
+                    break;
+                case "turnleft":
+                    turtleTurnLeft();
+                    break;
+                case "move":
+                    if(parts.length != 2){
+                        System.err.println("No info about the steps");
+                        continue;
+                    }
+                    int steps;
+                    try{
+                        steps = Integer.parseInt(parts[1]);
+                    }catch (Exception e){
+                        System.err.println("Steps must be a number");
+                        continue;
+                    }
+
+                    if(steps < 0){
+                        System.err.println("Steps must be positive");
+                        continue;
+                    }
+                    turtleMove(steps);
+                    break;
+                case "display":
+                    fieldDisplay();
+                    break;
+                default:
+                    System.err.println("Invalid Command");
+                    break;
+            }
         }
     }
 }
