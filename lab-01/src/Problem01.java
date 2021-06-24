@@ -27,6 +27,19 @@ public class Problem01 {
         }
     }
 
+    static void fieldDisplay(){
+        for(int i = 0; i < HEIGHT; i++){
+            for (int j = 0; j < WIDTH; j++){
+                if(turtleY == i && turtleX == j){
+                    System.out.print(FIELD_TURTLE_CELL);
+                }else{
+                    System.out.print(fieldContent[i][j]);
+                }
+            }
+            System.out.println();
+        }
+    }
+
     static int turtleX = 0, turtleY = 0; //by default, the location is (0, 0)
     static boolean turtleIsPenDown = false; //be default, the pen is UP
     static int turtleDX = 1, turtleDY = 0; //be default, the turtle looks to the right
