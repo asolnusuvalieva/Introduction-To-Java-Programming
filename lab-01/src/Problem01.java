@@ -66,5 +66,22 @@ public class Problem01 {
 
         turtleDY = -turtleDY;
     }
+
+    static void turtleMove(int steps){
+        for(int i = 0; i < steps; i++){ //Important to do it incrementally to be within the field
+            int nextX = turtleX + turtleDX;
+            int nextY = turtleY + turtleDY;
+
+            if(!fieldAreCoordsInside(nextX, nextY)){
+                break;
+            }
+
+            if(turtleIsPenDown){
+                fieldPutMark(turtleX, turtleY);
+            }
+            turtleX = nextX;
+            turtleY = nextY;
+        }
+    }
 }
 
