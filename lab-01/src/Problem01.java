@@ -26,5 +26,9 @@ public class Problem01 {
             fieldContent[y][x] = FIELD_MARKED_CELL;
         }
     }
+
+    static int turtleX = 0, turtleY = 0; //by default, the location is (0, 0)
+    static boolean turtleIsPenDown = false; //be default, the pen is UP
+    static int turtleDX = 1, turtleDY = 0; //be default, the turtle looks to the right
 }
 
