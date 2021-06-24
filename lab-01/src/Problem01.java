@@ -43,5 +43,10 @@ public class Problem01 {
     static int turtleX = 0, turtleY = 0; //by default, the location is (0, 0)
     static boolean turtleIsPenDown = false; //be default, the pen is UP
     static int turtleDX = 1, turtleDY = 0; //be default, the turtle looks to the right
+
+    static void turtlePutPenUp(){
+        turtleIsPenDown = false;
+    }
+
 }
 
