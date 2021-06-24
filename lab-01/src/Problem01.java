@@ -21,5 +21,10 @@ public class Problem01 {
         return x >= 0 && x < WIDTH && y >= 0 && y < HEIGHT;
     }
 
+    static void fieldPutMark(int x, int y){
+        if (fieldAreCoordsInside(x, y)){
+            fieldContent[y][x] = FIELD_MARKED_CELL;
+        }
+    }
 }
 
