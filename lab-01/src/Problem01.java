@@ -51,6 +51,13 @@ public class Problem01 {
         turtleIsPenDown = true;
     }
 
+    static void turtleTurnRight(){
+        int temp = turtleDX;
+        turtleDX = turtleDY;
+        turtleDY = temp;
+
+        turtleDX = -turtleDX;
+    }
 
 }
 
