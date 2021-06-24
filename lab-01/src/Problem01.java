@@ -59,5 +59,12 @@ public class Problem01 {
         turtleDX = -turtleDX;
     }
 
+    static void turtleTurnLeft(){
+        int temp = turtleDX;
+        turtleDX = turtleDY;
+        turtleDY = temp;
+
+        turtleDY = -turtleDY;
+    }
 }
 
