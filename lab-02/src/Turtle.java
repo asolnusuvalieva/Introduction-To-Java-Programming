@@ -39,4 +39,12 @@ public class Turtle {
 
         dx = -dx;
     }
+
+    public void turnLeft(){
+        int temp = dx;
+        dx = dy;
+        dy = temp;
+
+        dy = -dy;
+    }
 }
