@@ -16,4 +16,9 @@ public class Turtle {
             x = newX;
         }
     }
+    public void setY(int newY){
+        if (Field.areCoordsInside(x, newY)){
+            y = newY;
+        }
+    }
 }
