@@ -7,4 +7,13 @@ public class Field {
     private static final char MARKED_CELL = '*';
 
     private char[][] content;
+
+    public Field(){
+        content = new char[HEIGHT][WIDTH];
+        for(int i = 0; i < HEIGHT; i++){
+            for (int j = 0; j < WIDTH; j++){
+                content[i][j] = EMPTY_CELL;
+            }
+        }
+    }
 }
