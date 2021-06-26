@@ -25,5 +25,8 @@ public class Turtle {
     public Turtle(Field newField){
         field = newField;
     }
+    public void putPenUp(){
+        isPenDown = false;
+    }
 
 }
