@@ -20,4 +20,10 @@ public class Field {
     static boolean areCoordsInside(int x, int y){
         return x >= 0 && x < WIDTH && y >= 0 && y < HEIGHT;
     }
+
+    public void putMark(int x, int y){
+        if (areCoordsInside(x, y)){
+            content[y][x] = MARKED_CELL;
+        }
+    }
 }
