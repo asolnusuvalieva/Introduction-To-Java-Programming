@@ -21,4 +21,9 @@ public class Turtle {
             y = newY;
         }
     }
+
+    public Turtle(Field newField){
+        field = newField;
+    }
+
 }
