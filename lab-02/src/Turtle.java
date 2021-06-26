@@ -32,4 +32,11 @@ public class Turtle {
         isPenDown = true;
     }
 
+    public void turnRight(){
+        int temp = dx;
+        dx = dy;
+        dy = temp;
+
+        dx = -dx;
+    }
 }
