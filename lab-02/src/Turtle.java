@@ -28,5 +28,8 @@ public class Turtle {
     public void putPenUp(){
         isPenDown = false;
     }
+    public void putPenDown(){
+        isPenDown = true;
+    }
 
 }
