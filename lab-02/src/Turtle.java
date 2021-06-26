@@ -47,4 +47,21 @@ public class Turtle {
 
         dy = -dy;
     }
+
+    public void move(int steps){
+        for(int i = 0; i < steps; i++){
+            int nextX = x + dx;
+            int nextY = y + dy;
+
+            if(!Field.areCoordsInside(nextX, nextY)){
+                break;
+            }
+
+            if(isPenDown){
+                field.putMark(x, y);
+            }
+            x = nextX;
+            y = nextY;
+        }
+    }
 }
