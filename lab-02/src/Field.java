@@ -26,4 +26,18 @@ public class Field {
             content[y][x] = MARKED_CELL;
         }
     }
+
+    public void display(Turtle turtle){
+        for(int i = 0; i < HEIGHT; i++){
+            for (int j = 0; j < WIDTH; j++){
+                if(turtle.getY() == i && turtle.getX() == j){
+                    System.out.print(TURTLE_CELL);
+                }else{
+                    System.out.print(content[i][j]);
+                }
+            }
+            System.out.println();
+        }
+    }
+
 }
