@@ -29,4 +29,10 @@ public class Rational {
                 numerator.multiply(other.denominator).add(other.numerator.multiply(denominator)),
                 denominator.multiply(other.denominator));
     }
+
+    Rational subtract(Rational other){
+        return new Rational(
+                numerator.multiply(other.denominator).subtract(other.numerator.multiply(denominator)),
+                denominator.multiply(other.denominator));
+    }
 }
