@@ -8,6 +8,15 @@ public class Problem01 {
     }
 
     public static boolean contains(String operator){
+        String[] operators = {"*", "/", "-" , "+" , ">", "<", ">=", "<=", "=", "!="};
+        boolean contains = false;
+        for(String correctOperator : operators){
+            if(correctOperator.equals(operator)){
+                contains = true;
+                break;
+            }
+        }
 
+        return contains;
     }
 }
