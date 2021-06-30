@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Problem01 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Calculator of Rational Numbers");
 
+        printUserMessage();
     }
 
     public static void printUserMessage(){
