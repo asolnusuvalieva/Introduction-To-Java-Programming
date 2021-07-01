@@ -59,4 +59,14 @@ public class ArrayListInt {
         }
         data = temp;
     }
+
+    public String toString(){
+        StringBuilder result = new StringBuilder("[");
+
+        for(int i = 0; i < data.length; i++){
+            result.append(data[i]).append((i != data.length - 1 ? ", " : "]"));
+        }
+
+        return result.toString();
+    }
 }
