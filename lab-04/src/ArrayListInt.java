@@ -12,4 +12,8 @@ public class ArrayListInt {
     int get(int index){
         return data[index]; //Java itself will raise Errors in case of incorrect input
     }
+
+    void set(int index, int value){
+        data[index] = value; //Java itself will raise Errors in case of incorrect input
+    }
 }
