@@ -27,4 +27,21 @@ public class ArrayListInt {
         temp[temp.length - 1] = value;
         data = temp;
     }
+
+    void add(int index, int value){ //Inserting
+        if(index < 0 || index >= data.length){
+            throw new IndexOutOfBoundsException("Invalid index of insertion!");
+        }
+
+        int[] temp = new int[data.length + 1];
+
+        for(int i = 0; i < index; i++){
+            temp[i] = data[i];
+        }
+        temp[index] = value;
+        for(int i = index; i < data.length; i++){
+            temp[i + 1] = data[i];
+        }
+        data = temp;
+    }
 }
