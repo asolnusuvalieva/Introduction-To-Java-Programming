@@ -8,4 +8,8 @@ public class ArrayListInt {
     int size(){
         return data.length;
     }
+
+    int get(int index){
+        return data[index]; //Java itself will raise Errors in case of incorrect input
+    }
 }
