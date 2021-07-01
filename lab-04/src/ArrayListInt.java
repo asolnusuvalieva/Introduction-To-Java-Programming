@@ -44,4 +44,19 @@ public class ArrayListInt {
         }
         data = temp;
     }
+
+    void remove(int index){
+        if(index < 0 || index >= data.length){
+            throw new IndexOutOfBoundsException("Invalid index of removal!");
+        }
+        int[] temp = new int[data.length - 1];
+
+        for(int i = 0; i < index; i++){
+            temp[i] = data[i];
+        }
+        for(int i = index + 1; i < data.length; i++){
+            temp[i - 1] = data[i];
+        }
+        data = temp;
+    }
 }
