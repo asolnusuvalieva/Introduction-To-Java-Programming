@@ -1,8 +1,11 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Problem01 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        ArrayList<Integer> numbers = new ArrayList<>();
     }
     private static void reverse(ArrayList<Integer> numbers) {
         for (int i = 0, j = numbers.size() - 1; i < j; i++, j--) {
