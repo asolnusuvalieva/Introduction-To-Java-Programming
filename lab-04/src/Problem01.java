@@ -18,4 +18,8 @@ public class Problem01 {
             }
         }
     }
+
+    private static void removeOddValues(ArrayList<Integer> numbers){
+
+    }
 }
