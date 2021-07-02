@@ -18,6 +18,10 @@ public class Problem01 {
         System.out.println("After reversing:");
         reverse(numbers);
         System.out.println(numbers); //toString()
+
+        addZerosBeforeEvenValues(numbers);
+        System.out.println("After insertion:");
+        System.out.println(numbers); //toString()
     }
     private static void reverse(ArrayList<Integer> numbers) {
         for (int i = 0, j = numbers.size() - 1; i < j; i++, j--) {
