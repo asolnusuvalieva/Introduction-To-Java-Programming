@@ -6,6 +6,12 @@ public class Problem01 {
         Scanner scanner = new Scanner(System.in);
 
         ArrayList<Integer> numbers = new ArrayList<>();
+
+        while (scanner.hasNextInt()){
+            int number = scanner.nextInt();
+            numbers.add(number); //after each iteration, the array will grow
+        }
+
     }
     private static void reverse(ArrayList<Integer> numbers) {
         for (int i = 0, j = numbers.size() - 1; i < j; i++, j--) {
