@@ -9,6 +9,9 @@ public class Problem03 {
             int number = scanner.nextInt();
             numbers.add(number); //after each iteration, the array will grow
         }
+
+        System.out.println("Before reversing:");
+        System.out.println(numbers); //toString()
     }
     private static void reverse(ArrayListInt numbers){
         for(int i = 0, j = numbers.size() - 1; i < j; i++, j--){
