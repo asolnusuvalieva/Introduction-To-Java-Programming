@@ -5,6 +5,10 @@ public class Problem03 {
         Scanner scanner = new Scanner(System.in);
 
         ArrayListInt numbers = new ArrayListInt();
+        while (scanner.hasNextInt()){
+            int number = scanner.nextInt();
+            numbers.add(number); //after each iteration, the array will grow
+        }
     }
     private static void reverse(ArrayListInt numbers){
         for(int i = 0, j = numbers.size() - 1; i < j; i++, j--){
