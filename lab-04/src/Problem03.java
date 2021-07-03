@@ -20,7 +20,12 @@ public class Problem03 {
         addZerosBeforeEvenValues(numbers);
         System.out.println("After insertion:");
         System.out.println(numbers); //toString()
+
+        removeOddValues(numbers);
+        System.out.println("After deletions:");
+        System.out.println(numbers); //toString()
     }
+
     private static void reverse(ArrayListInt numbers){
         for(int i = 0, j = numbers.size() - 1; i < j; i++, j--){
             int temp = numbers.get(i); //reading an information, automatic boxing
