@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class Problem03 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        ArrayListInt numbers = new ArrayListInt();
     }
     private static void reverse(ArrayListInt numbers){
         for(int i = 0, j = numbers.size() - 1; i < j; i++, j--){
