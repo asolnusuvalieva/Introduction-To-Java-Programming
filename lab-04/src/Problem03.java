@@ -16,4 +16,8 @@ public class Problem03 {
             }
         }
     }
+
+    private static void removeOddValues(ArrayListInt numbers){
+
+    }
 }
