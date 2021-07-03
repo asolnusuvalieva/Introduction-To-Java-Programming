@@ -6,4 +6,8 @@ public class Problem03 {
             numbers.set(j, temp);
         }
     }
+
+    private static void addZerosBeforeEvenValues(ArrayListInt numbers){
+
+    }
 }
