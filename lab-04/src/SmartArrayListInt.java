@@ -27,4 +27,14 @@ public class SmartArrayListInt {
         }
         data[index] = value;
     }
+
+    void add(int value){ //Appending
+        if(size + 1 > data.length){
+            int[] temp = new int[size * SIZE_MULTIPLIER];
+            System.arraycopy(data, 0, temp, 0, size);
+            data = temp;
+        }
+        data[size] = value;
+        size++;
+    }
 }
