@@ -37,4 +37,22 @@ public class SmartArrayListInt {
         data[size] = value;
         size++;
     }
+
+    void add(int index, int value){ //Inserting
+        if(index < 0 || index >= size){
+            throw new IndexOutOfBoundsException("Invalid index of insertion!");
+        }
+
+        if(size + 1 <= data.length){
+            System.arraycopy(data, index, data, index + 1, size - index);
+            data[index] = value;
+        }else{
+            int[] temp = new int[size * SIZE_MULTIPLIER];
+            System.arraycopy(data, 0, temp, 0, index);
+            temp[index] = value;
+            System.arraycopy(data, index, temp, index + 1, size - index);
+            data = temp;
+        }
+        size++;
+    }
 }
