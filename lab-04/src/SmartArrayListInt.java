@@ -55,4 +55,12 @@ public class SmartArrayListInt {
         }
         size++;
     }
+
+    void remove(int index){
+        if(index < 0 || index >= size){
+            throw new IndexOutOfBoundsException("Invalid index of removal!");
+        }
+        System.arraycopy(data, index + 1, data, index, size - index - 1);
+        size--;
+    }
 }
