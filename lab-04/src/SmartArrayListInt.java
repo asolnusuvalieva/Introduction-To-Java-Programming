@@ -14,4 +14,10 @@ public class SmartArrayListInt {
         return size;
     }
 
+    int get(int index){
+        if(index < 0 || index >= size){
+            throw new IndexOutOfBoundsException("Invalid index of reading a value!");
+        }
+        return data[index];
+    }
 }
