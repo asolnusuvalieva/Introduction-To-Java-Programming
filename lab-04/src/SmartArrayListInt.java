@@ -20,4 +20,11 @@ public class SmartArrayListInt {
         }
         return data[index];
     }
+
+    void set(int index, int value){
+        if(index < 0 || index >= size){
+            throw new IndexOutOfBoundsException("Invalid index of replacing a value!");
+        }
+        data[index] = value;
+    }
 }
