@@ -9,4 +9,9 @@ public class SmartArrayListInt {
         data = new int[DEFAULT_CAPACITY];
         size = 0; //at the start, it contains nothing
     }
+
+    int size()  {
+        return size;
+    }
+
 }
