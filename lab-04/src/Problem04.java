@@ -18,6 +18,11 @@ public class Problem04 {
     }
 
     private static void removeOddValues(SmartArrayListInt numbers){
-
+        for(int i = 0; i < numbers.size(); i++){
+            if(numbers.get(i) % 2 != 0){
+                numbers.remove(i);
+                i--; //not to skip the next value
+            }
+        }
     }
 }
