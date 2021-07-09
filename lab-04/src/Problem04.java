@@ -6,4 +6,8 @@ public class Problem04 {
             numbers.set(j, temp);
         }
     }
+
+    private static void addZerosBeforeEvenValues(SmartArrayListInt numbers){
+
+    }
 }
