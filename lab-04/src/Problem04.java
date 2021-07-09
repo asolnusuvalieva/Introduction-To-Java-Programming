@@ -16,4 +16,8 @@ public class Problem04 {
             }
         }
     }
+
+    private static void removeOddValues(SmartArrayListInt numbers){
+
+    }
 }
