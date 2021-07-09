@@ -1,5 +1,10 @@
+import java.util.Scanner;
+
 public class Problem04 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        SmartArrayListInt numbers = new SmartArrayListInt();
 
     }
     private static void reverse(SmartArrayListInt numbers){
