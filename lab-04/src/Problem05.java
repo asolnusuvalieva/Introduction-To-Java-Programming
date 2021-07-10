@@ -29,7 +29,9 @@ public class Problem05 {
 
         {
             ArrayListInt list = new ArrayListInt();
-
+            for(int i = 0; i < COUNT; i++){
+                list.add((int)(Math.random() * 1000));
+            }
         }
     }
 }
