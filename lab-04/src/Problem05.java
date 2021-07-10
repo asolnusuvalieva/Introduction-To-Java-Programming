@@ -9,6 +9,9 @@ public class Problem05 {
 
         {
             ArrayList<Integer> list = new ArrayList<>();
+            for(int i = 0; i < COUNT; i++){
+                list.add((int)(Math.random() * 1000));
+            }
         }
     }
 }
