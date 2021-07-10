@@ -26,5 +26,10 @@ public class Problem05 {
         System.out.printf("ArrayList<Integer>: %.1f%n", deltaTime/1e+9f);
 
         startTime = System.nanoTime();
+
+        {
+            ArrayListInt list = new ArrayListInt();
+
+        }
     }
 }
