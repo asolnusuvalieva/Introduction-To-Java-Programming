@@ -19,5 +19,8 @@ public class Problem05 {
                 list.remove(0);
             }
         }
+
+        endTime = System.nanoTime();
+        deltaTime = endTime - startTime;
     }
 }
