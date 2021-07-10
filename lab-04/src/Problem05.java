@@ -47,5 +47,10 @@ public class Problem05 {
 
 
         startTime = System.nanoTime();
+
+        {
+            SmartArrayListInt list = new SmartArrayListInt();
+
+        }
     }
 }
