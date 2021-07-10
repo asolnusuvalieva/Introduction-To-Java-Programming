@@ -15,6 +15,9 @@ public class Problem05 {
             for(int i = 0; i < COUNT; i++){
                 list.add(0, (int)(Math.random() * 1000));
             }
+            for(int i = 0; i < COUNT*2 ; i++){
+                list.remove(0);
+            }
         }
     }
 }
