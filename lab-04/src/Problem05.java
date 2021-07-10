@@ -50,7 +50,9 @@ public class Problem05 {
 
         {
             SmartArrayListInt list = new SmartArrayListInt();
-
+            for(int i = 0; i < COUNT; i++){
+                list.add((int)(Math.random() * 1000));
+            }
         }
     }
 }
