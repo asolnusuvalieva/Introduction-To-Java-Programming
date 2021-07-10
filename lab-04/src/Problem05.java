@@ -39,5 +39,13 @@ public class Problem05 {
                 list.remove(0);
             }
         }
+
+        endTime = System.nanoTime();
+        deltaTime = endTime - startTime;
+
+        System.out.printf("ArrayListInt, no optimization applied: %.1f%n", deltaTime/1e+9f);
+
+
+        startTime = System.nanoTime();
     }
 }
