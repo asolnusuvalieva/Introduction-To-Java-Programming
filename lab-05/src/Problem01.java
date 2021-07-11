@@ -21,6 +21,8 @@ public class Problem01 extends JFrame {
         JButton greenButton = new JButton("GREEN"); //a button with a text/name
         JButton blueButton = new JButton("BLUE"); //a button with a text/name
 
+        JPanel toolbarPanel = new JPanel();
+        toolbarPanel.setBackground(Color.DARK_GRAY);
     }
 
 }
