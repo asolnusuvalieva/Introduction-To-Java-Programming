@@ -23,6 +23,9 @@ public class Problem01 extends JFrame {
 
         JPanel toolbarPanel = new JPanel();
         toolbarPanel.setBackground(Color.DARK_GRAY);
+
+        toolbarPanel.add(redButton);
+
     }
 
 }
