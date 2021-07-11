@@ -10,6 +10,12 @@ public class Problem01 extends JFrame {
         setTitle("Lab-05: Problem01");
         setDefaultCloseOperation(EXIT_ON_CLOSE); //What to do by default when we close the window? //it'll stop the program
         setLayout(new BorderLayout()); //Choose a layout engine
+
+        /* Red Panel */
+        JPanel mainPanel = new JPanel();
+        mainPanel.setBackground(Color.RED);
+        /* Adding the panel to the window */
+        add(mainPanel, "Center");
     }
 
 }
