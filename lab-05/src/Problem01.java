@@ -19,6 +19,7 @@ public class Problem01 extends JFrame {
 
         JButton redButton = new JButton("RED"); //a button with a text/name
         JButton greenButton = new JButton("GREEN"); //a button with a text/name
+        JButton blueButton = new JButton("BLUE"); //a button with a text/name
 
     }
 
