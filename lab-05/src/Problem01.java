@@ -31,4 +31,7 @@ public class Problem01 extends JFrame {
         add(toolbarPanel, "South");
     }
 
+    public static void main(String[] args) {
+
+    }
 }
