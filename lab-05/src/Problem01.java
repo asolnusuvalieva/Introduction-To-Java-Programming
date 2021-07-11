@@ -32,6 +32,6 @@ public class Problem01 extends JFrame {
     }
 
     public static void main(String[] args) {
-
+        new Problem01().setVisible(true);
     }
 }
