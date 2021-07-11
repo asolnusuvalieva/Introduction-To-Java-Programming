@@ -18,6 +18,7 @@ public class Problem01 extends JFrame {
         add(mainPanel, "Center");
 
         JButton redButton = new JButton("RED"); //a button with a text/name
+        JButton greenButton = new JButton("GREEN"); //a button with a text/name
 
     }
 
