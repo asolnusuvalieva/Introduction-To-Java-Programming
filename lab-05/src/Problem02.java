@@ -14,6 +14,7 @@ public class Problem02 extends JFrame {
         /* Red Panel */
         mainPanel = new JPanel();
         mainPanel.setBackground(Color.RED);
+        add(mainPanel, "Center");
 
     }
 }
