@@ -32,5 +32,6 @@ public class Problem02 extends JFrame {
         toolbarPanel.add(greenButton);
         toolbarPanel.add(blueButton);
 
+        add(toolbarPanel, "South");
     }
 }
