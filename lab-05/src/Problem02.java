@@ -25,5 +25,6 @@ public class Problem02 extends JFrame {
         JButton blueButton = new JButton("BLUE"); //a button with a text/name
         blueButton.addActionListener(e -> mainPanel.setBackground(Color.BLUE));
 
+        JPanel toolbarPanel = new JPanel();
     }
 }
