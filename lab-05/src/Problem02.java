@@ -30,6 +30,7 @@ public class Problem02 extends JFrame {
 
         toolbarPanel.add(redButton);
         toolbarPanel.add(greenButton);
+        toolbarPanel.add(blueButton);
 
     }
 }
