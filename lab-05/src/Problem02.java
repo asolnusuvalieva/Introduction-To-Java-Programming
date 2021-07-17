@@ -26,5 +26,7 @@ public class Problem02 extends JFrame {
         blueButton.addActionListener(e -> mainPanel.setBackground(Color.BLUE));
 
         JPanel toolbarPanel = new JPanel();
+        toolbarPanel.setBackground(Color.DARK_GRAY);
+
     }
 }
