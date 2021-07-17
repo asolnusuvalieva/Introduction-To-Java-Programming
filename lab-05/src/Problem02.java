@@ -19,5 +19,7 @@ public class Problem02 extends JFrame {
         JButton redButton = new JButton("RED"); //a button with a text/name
         redButton.addActionListener(e -> mainPanel.setBackground(Color.RED));
 
+        JButton greenButton = new JButton("GREEN"); //a button with a text/name
+
     }
 }
