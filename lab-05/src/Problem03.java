@@ -18,5 +18,6 @@ public class Problem03 {
         //Methods from KeyListener
         public void keyPressed(KeyEvent e){}
         public void keyTyped(KeyEvent e){}
+        public void keyReleased(KeyEvent e){}
     }
 }
