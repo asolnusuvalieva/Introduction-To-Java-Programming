@@ -12,5 +12,7 @@ public class Problem03 {
 
         //Methods from MouseMotionListener
         public void mouseMoved(MouseEvent e) {}
+        public void mouseDragged(MouseEvent e){}
+
     }
 }
