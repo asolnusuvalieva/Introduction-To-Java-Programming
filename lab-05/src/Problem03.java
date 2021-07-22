@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
 public class Problem03 {
@@ -9,5 +10,7 @@ public class Problem03 {
             this.window = window;
         }
 
+        //Methods from MouseMotionListener
+        public void mouseMoved(MouseEvent e) {}
     }
 }
