@@ -28,6 +28,12 @@ class MouseReporter extends Reporter {
         window.setTitle(e.getX() + ", " + e.getY());
     }
 }
+
+class KeyReporter extends Reporter {
+    KeyReporter(JFrame window){
+        super(window);
+    }
+}
 public class Problem03 {
 
 }
