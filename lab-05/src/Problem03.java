@@ -23,6 +23,10 @@ class MouseReporter extends Reporter {
     MouseReporter(JFrame window){
         super(window);
     }
+
+    public void mouseMoved(MouseEvent e) {
+        window.setTitle(e.getX() + ", " + e.getY());
+    }
 }
 public class Problem03 {
 
