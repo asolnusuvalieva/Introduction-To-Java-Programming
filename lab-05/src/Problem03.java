@@ -19,7 +19,11 @@ abstract class Reporter implements MouseMotionListener, KeyListener {
     public void keyTyped(KeyEvent e){}
     public void keyReleased(KeyEvent e){}
 }
-
+class MouseReporter extends Reporter {
+    MouseReporter(JFrame window){
+        super(window);
+    }
+}
 public class Problem03 {
 
 }
