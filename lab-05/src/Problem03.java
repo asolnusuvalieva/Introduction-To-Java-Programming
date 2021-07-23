@@ -51,5 +51,8 @@ public class Problem03 extends JFrame {
         JPanel mainPanel = new JPanel();
         mainPanel.setBackground(Color.DARK_GRAY);
         mainPanel.addMouseMotionListener(new MouseReporter(this));
+
+        addKeyListener(new KeyReporter(this)); //adding the KeyReporter to the window
+
     }
 }
