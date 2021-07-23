@@ -33,6 +33,9 @@ class KeyReporter extends Reporter {
     KeyReporter(JFrame window){
         super(window);
     }
+    public void keyPressed(KeyEvent e) {
+        window.setTitle(String.valueOf(e.getKeyChar()));
+    }
 }
 public class Problem03 {
 
