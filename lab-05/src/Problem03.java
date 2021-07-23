@@ -54,5 +54,7 @@ public class Problem03 extends JFrame {
 
         addKeyListener(new KeyReporter(this)); //adding the KeyReporter to the window
 
+        /* Adding the panel to the window */
+        add(mainPanel, "Center");
     }
 }
