@@ -37,6 +37,8 @@ class KeyReporter extends Reporter {
         window.setTitle(String.valueOf(e.getKeyChar()));
     }
 }
-public class Problem03 {
+public class Problem03 extends JFrame {
+    Problem03(){
 
+    }
 }
