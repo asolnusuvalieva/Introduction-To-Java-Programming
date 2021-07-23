@@ -57,4 +57,8 @@ public class Problem03 extends JFrame {
         /* Adding the panel to the window */
         add(mainPanel, "Center");
     }
+
+    public static void main(String[] args) {
+        new Problem03().setVisible(true);
+    }
 }
