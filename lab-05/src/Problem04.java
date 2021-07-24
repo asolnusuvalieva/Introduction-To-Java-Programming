@@ -30,5 +30,5 @@ class Checkerboard extends JPanel {
         }
     }
 }
-public class Problem04 {
+public class Problem04 extends JFrame{
 }
