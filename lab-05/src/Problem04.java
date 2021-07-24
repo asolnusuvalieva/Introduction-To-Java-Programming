@@ -31,4 +31,7 @@ class Checkerboard extends JPanel {
     }
 }
 public class Problem04 extends JFrame{
+    Problem04(){
+
+    }
 }
