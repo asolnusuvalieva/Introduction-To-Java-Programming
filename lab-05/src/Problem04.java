@@ -40,5 +40,7 @@ public class Problem04 extends JFrame{
 
         JPanel mainPanel = new Checkerboard();
         mainPanel.setBackground(Color.BLACK);
+
+        add(mainPanel, "Center");
     }
 }
