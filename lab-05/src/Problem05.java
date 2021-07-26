@@ -11,6 +11,11 @@ class Field{
         this.width = width;
         this.height = height;
     }
+
+    int getWidth(){
+        return width;
+    }
+
 }
 public class Problem05 {
 }
