@@ -28,6 +28,12 @@ class Field{
 class Robot{ //a circle
     private int x, y;
     private final Field field;
+
+    Robot(Field field, int x, int y){
+        this.field = field;
+        this.x = x;
+        this.y = y;
+    }
 }
 public class Problem05 {
 }
