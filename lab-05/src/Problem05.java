@@ -38,6 +38,11 @@ class Robot{ //a circle
         this.x = x;
         this.y = y;
     }
+
+    int getX(){
+        return x;
+    }
+
 }
 public class Problem05 {
 }
