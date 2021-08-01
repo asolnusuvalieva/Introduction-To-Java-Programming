@@ -45,6 +45,15 @@ class Robot{ //a circle
     int getY(){
         return y;
     }
+
+    void moveLeft(){
+        int nextX = x - 1;
+        int nextY = y;
+
+        if(field.areCoordsInside(nextX, nextY)){
+            x = nextX;
+        }
+    }
 }
 public class Problem05 {
 }
