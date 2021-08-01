@@ -24,5 +24,9 @@ class Field{
                 y >= 0 && y < height;
     }
 }
+
+class Robot{ //a circle
+
+}
 public class Problem05 {
 }
