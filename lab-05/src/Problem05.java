@@ -29,6 +29,10 @@ class Robot{ //a circle
     private int x, y;
     private final Field field;
 
+    Robot(Field field){
+        this(field, 0, 0); //by default, (0, 0)
+    }
+
     Robot(Field field, int x, int y){
         this.field = field;
         this.x = x;
