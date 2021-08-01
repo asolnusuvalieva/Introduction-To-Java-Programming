@@ -62,6 +62,14 @@ class Robot{ //a circle
             x = nextX;
         }
     }
+    void moveUp(){
+        int nextY = y - 1;
+        int nextX = x;
+
+        if(field.areCoordsInside(nextX, nextY)){
+            y = nextY;
+        }
+    }
 }
 public class Problem05 {
 }
