@@ -26,7 +26,8 @@ class Field{
 }
 
 class Robot{ //a circle
-
+    private int x, y;
+    private final Field field;
 }
 public class Problem05 {
 }
