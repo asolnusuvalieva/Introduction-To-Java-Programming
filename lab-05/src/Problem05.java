@@ -42,7 +42,9 @@ class Robot{ //a circle
     int getX(){
         return x;
     }
-
+    int getY(){
+        return y;
+    }
 }
 public class Problem05 {
 }
