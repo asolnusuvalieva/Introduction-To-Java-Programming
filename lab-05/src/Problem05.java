@@ -130,7 +130,8 @@ class RobotCheckerboard extends JPanel {
 }
 
 class RobotController extends KeyAdapter {
-
+    private final JPanel robotCheckerboard; //ask Java Swing to update when a robot moves
+    private final Robot robot;
 }
 public class Problem05 {
 }
