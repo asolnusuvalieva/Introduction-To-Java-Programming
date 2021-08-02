@@ -119,6 +119,12 @@ class RobotCheckerboard extends JPanel {
                 g.fillRect(screenX, screenY, cellSize, cellSize);
             }
         }
+
+        //Drawing Robot
+        int screenX = centeringShiftX + robot.getX() * cellSize;
+        int screenY = centeringShiftY + robot.getY() * cellSize;
+        g.setColor(Color.RED);
+        g.fillOval(screenX, screenY, cellSize, cellSize);
     }
 }
 public class Problem05 {
