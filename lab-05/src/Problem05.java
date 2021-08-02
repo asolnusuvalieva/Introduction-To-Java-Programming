@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
 
 class Field{
     private static final int DEFAULT_FIELD_WIDTH = 10;
@@ -126,6 +127,10 @@ class RobotCheckerboard extends JPanel {
         g.setColor(Color.RED);
         g.fillOval(screenX, screenY, cellSize, cellSize);
     }
+}
+
+class RobotController extends KeyAdapter {
+
 }
 public class Problem05 {
 }
