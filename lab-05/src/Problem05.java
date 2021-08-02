@@ -93,7 +93,17 @@ class RobotCheckerboard extends JPanel {
     }
 
     protected void paintComponent(Graphics g) {
+        super.paintComponent(g); //combining old/parent's logic
+        /*
+        g can do a lot of useful things
+         */
 
+        //Dynamic choice of the cell size
+        int cellSize = (int)(Math.min(getWidth()/field.getWidth(), getHeight()/field.getHeight())*0.85f); //80% is for the cell, while 20% is to give space
+        int screenFieldWidth = field.getWidth() * cellSize;
+        int screenFieldHeight = field.getHeight() * cellSize;
+        int centeringShiftX = (int)((getWidth() - screenFieldWidth)/2.0f);
+        int centeringShiftY = (int)((getHeight() - screenFieldHeight)/2.0f);
     }
 }
 public class Problem05 {
