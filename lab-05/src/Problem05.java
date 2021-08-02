@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 class Field{
     private static final int DEFAULT_FIELD_WIDTH = 10;
@@ -136,6 +137,10 @@ class RobotController extends KeyAdapter {
     RobotController(JPanel robotCheckerboard, Robot robot){
         this.robotCheckerboard = robotCheckerboard;
         this.robot = robot;
+    }
+
+    public void keyPressed(KeyEvent e) {
+
     }
 }
 public class Problem05 {
