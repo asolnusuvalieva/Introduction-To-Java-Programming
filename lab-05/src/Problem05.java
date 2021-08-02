@@ -140,7 +140,24 @@ class RobotController extends KeyAdapter {
     }
 
     public void keyPressed(KeyEvent e) {
-
+        switch (e.getKeyCode()){
+            case KeyEvent.VK_UP:
+                robot.moveUp();
+                robotCheckerboard.repaint(); //you are invalid, redraw
+                break;
+            case KeyEvent.VK_DOWN:
+                robot.moveDown();
+                robotCheckerboard.repaint(); //you are invalid, redraw
+                break;
+            case KeyEvent.VK_LEFT:
+                robot.moveLeft();
+                robotCheckerboard.repaint(); //you are invalid, redraw
+                break;
+            case KeyEvent.VK_RIGHT:
+                robot.moveRight();
+                robotCheckerboard.repaint(); //you are invalid, redraw
+                break;
+        }
     }
 }
 public class Problem05 {
