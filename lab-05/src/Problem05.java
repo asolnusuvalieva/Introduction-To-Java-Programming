@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 class Field{
     private static final int DEFAULT_FIELD_WIDTH = 10;
     private static final int DEFAULT_FIELD_HEIGHT = 10;
@@ -78,6 +80,10 @@ class Robot{ //a circle
             y = nextY;
         }
     }
+}
+
+class RobotCheckerboard extends JPanel {
+
 }
 public class Problem05 {
 }
