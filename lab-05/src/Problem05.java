@@ -104,6 +104,21 @@ class RobotCheckerboard extends JPanel {
         int screenFieldHeight = field.getHeight() * cellSize;
         int centeringShiftX = (int)((getWidth() - screenFieldWidth)/2.0f);
         int centeringShiftY = (int)((getHeight() - screenFieldHeight)/2.0f);
+
+        //Drawing Checkerboard
+        for(int y = 0; y < field.getHeight(); y++){
+            for(int x = 0; x < field.getWidth(); x++){
+                int screenX = centeringShiftX + x * cellSize;
+                int screenY = centeringShiftY + y * cellSize;
+
+                if((y + x) % 2 == 0){
+                    g.setColor(Color.BLACK);
+                }else{
+                    g.setColor(Color.WHITE);
+                }
+                g.fillRect(screenX, screenY, cellSize, cellSize);
+            }
+        }
     }
 }
 public class Problem05 {
