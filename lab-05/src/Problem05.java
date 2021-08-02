@@ -85,6 +85,11 @@ class Robot{ //a circle
 class RobotCheckerboard extends JPanel {
     private final Field field;
     private final Robot robot;
+
+    RobotCheckerboard(Field field, Robot robot){
+        this.field = field;
+        this.robot = robot;
+    }
 }
 public class Problem05 {
 }
