@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 class Field{
     private static final int DEFAULT_FIELD_WIDTH = 10;
@@ -89,6 +90,10 @@ class RobotCheckerboard extends JPanel {
     RobotCheckerboard(Field field, Robot robot){
         this.field = field;
         this.robot = robot;
+    }
+
+    protected void paintComponent(Graphics g) {
+
     }
 }
 public class Problem05 {
