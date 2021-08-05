@@ -170,5 +170,9 @@ public class Problem05 extends JFrame {
 
         Field field = new Field();
         Robot robot = new Robot(field);
+
+        JPanel mainPanel = new RobotCheckerboard(field, robot);
+        mainPanel.setBackground(Color.BLACK);
+        addKeyListener(new RobotController(mainPanel, robot)); //to the window
     }
 }
