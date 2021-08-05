@@ -177,4 +177,8 @@ public class Problem05 extends JFrame {
 
         add(mainPanel, "Center");
     }
+
+    public static void main(String[] args) {
+        new Problem05().setVisible(true); //set window visible and start an infinite loop
+    }
 }
