@@ -161,4 +161,7 @@ class RobotController extends KeyAdapter {
     }
 }
 public class Problem05 extends JFrame {
+    Problem05(){
+
+    }
 }
