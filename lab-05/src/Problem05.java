@@ -167,5 +167,8 @@ public class Problem05 extends JFrame {
         setTitle("Lab-05: Problem05");
         setDefaultCloseOperation(EXIT_ON_CLOSE); //request to close the window on tapping [x]
         setLayout(new BorderLayout());
+
+        Field field = new Field();
+        Robot robot = new Robot(field);
     }
 }
