@@ -162,6 +162,10 @@ class RobotController extends KeyAdapter {
 }
 public class Problem05 extends JFrame {
     Problem05(){
-
+        setSize(400, 400);
+        setLocationRelativeTo(null); //will center the window
+        setTitle("Lab-05: Problem05");
+        setDefaultCloseOperation(EXIT_ON_CLOSE); //request to close the window on tapping [x]
+        setLayout(new BorderLayout());
     }
 }
