@@ -174,5 +174,7 @@ public class Problem05 extends JFrame {
         JPanel mainPanel = new RobotCheckerboard(field, robot);
         mainPanel.setBackground(Color.BLACK);
         addKeyListener(new RobotController(mainPanel, robot)); //to the window
+
+        add(mainPanel, "Center");
     }
 }
